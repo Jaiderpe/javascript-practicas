@@ -5,10 +5,8 @@ const texto = document.querySelector("#texto");
 console.log(titulo);
 console.log(boton);
 
-
 boton.addEventListener("click", clickAlBoton);
 agregar . addEventListener("click", agregartexto);
-
 
 
 function clickAlBoton() {
