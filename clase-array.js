@@ -12,8 +12,8 @@ const cuantoselimino = 2 ;
 const numeroagregar = [5, 8 ,12,40];
  numeros.splice(indice, cuantoselimino,  [...numeroAgregar]);       
  // toString();para acomodar el array en una cadena de texto
- let miar = [nombre : "array"]
- miar.toString();
+ //let mar = [nombre :"array"]
+ mar.toString();
  // join(); se utiliza para concatenar una cadena e imprime esa cadenaresulante.(csv)
  // join tambien sirve para  me permite elegir 
  //   a  Todos
