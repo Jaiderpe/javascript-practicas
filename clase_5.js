@@ -1,8 +1,9 @@
+const miFormulario = document.querySelector("#miFormulario");
+const resultado = document.querySelector("#resultado");
 
-const formularioconvierte = document.querySelector("#formularioconvierte");
+let edad = 24;
 
-
-formularioconvierte.addEventListener("submit", function(event) {
+miFormulario.addEventListener("submit", function(event) {
     event.preventDefault();
 
 // necesita un formulario y guarda la informacion de un formulario
@@ -20,3 +21,5 @@ formularioconvierte.addEventListener("submit", function(event) {
      //console.log(fechanacimiento);
      console.log(edad);
 });
+
+export default edad;
