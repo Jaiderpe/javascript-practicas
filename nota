@@ -1,0 +1,37 @@
+const persona1 = crearobjetocontactos("adrian", "323232", "juana@kd");
+
+function agregarcontactos(contactos) {
+    try{
+        contactos.push(contactos);
+        console.log("se se agrego", contactos);
+    } catch (e) {
+        console.error("no se agregado");
+    }
+}
+function crearobjetocontactos(nombrec, telefonoc, Emailc){
+    return{
+        nombre: nombrec,
+        telefono: telefonoc,
+        Email: Emailc
+    };
+}
+
+//  funcion  y devolver odjeto
+
+// function devolverhola() {
+//  return{
+//        nombre: "adr",
+//      edad: 23
+//    };
+// }
+//const persona2 = devolverhola("adr", 23); 
+//const persona3 = devolverhola("dani", 26);
+//const persona4 = devolverhola("ret", 8);
+
+//console.log(devolverhola());  // hola
+
+let contactos = [
+    {nombre: "juan", telefono: "32323", Email: "jausahd@ad"},
+    {nombre: "aniu", telefono: "242342", Email: "jisdjs@rwe"}
+];
+const form =contactos
