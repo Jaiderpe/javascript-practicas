@@ -35,3 +35,46 @@ let contactos = [
     {nombre: "aniu", telefono: "242342", Email: "jisdjs@rwe"}
 ];
 const form =contactos
+
+let array =["juan","diego","davuid"];
+array[1]; "facundo";
+
+//codigo para cambiar el valor de una propiedad de un odjeto con un formulario 
+let odjeto ={
+    persona1: "juan",
+    persona2: "diego",
+    persona3:"david"
+};
+// odjeto.persona2;  "facundo";
+
+const  miForm = document.querySelector("#miForm")
+let formData = new  FormData();
+formData.get("persona2");
+miForm.addEventListener("submit" ,(Event) => {
+    Event.preventDefault();
+
+    const datosFormulario = new FormData(miForm);
+    const nombreNuevo = datosFormulario.get ("nombre");
+
+    odjeto.persona2 = nombreNuevo;
+    console.log(odjeto);
+});
+
+// el name dentro de la etiqueta imput es el nombre de la llave queremos 
+//accerder con . get y nos va  a dar el valor dentro de ese input
+// array : agregar _push ();         eliminar ultimo -pop();      eliminar uno _splice(indice,1);
+
+let odjeto2 = {
+    nombre:"juan",
+    calcularpromeio: function(){},
+    saludar : function (){
+        console.log(this.nombre);
+
+    },
+
+    array: ["lunes", "martes"],
+    dias: async function(){
+        return await this.array[0];
+    }
+};
+// this se refiere a este mismo odjeto
