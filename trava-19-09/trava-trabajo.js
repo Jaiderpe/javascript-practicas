@@ -1,23 +1,45 @@
+import "./trava1.js"
+
 class JaiderElement extends HTMLElement {
+
     constructor(){
         super();
-        this.textContent = `Hola mundo`;
-        this.id = "miId"
+
+        this.attachShadow({mode : "open"});
+
+        this.style.ter= `
+         
+         display: flex;
+         border: 1px solid;
+        `;
         this.style= `
          display: flex;
          border: 1px solid;
         `;
-        this.innerHTML = `
+        this.shadowRoot.innerHTML = `
             <style>
             p{
-                color:red;
+                color:black;
                 align-items: center;
             }
             </style>
                 
             <div>
-                <p>Hola me presento soy jaider adrian perez vega</p>
-            </div>S
+                <p>INFORMACION PERSONAL:</p>
+                <p>Me presento soy jaider adrian perez vega</p>
+                <p>Soy aprendis de Campus</p>
+                <p>Soy panadero y tabajo de medio tiempo.</p>
+
+            </div>
+            <div class ="ter">
+                <p>INFORMACION PERSONAL:</p>
+                <p>Me presento soy jaider adrian perez vega</p>
+                <p>Soy aprendis de Campus</p>
+                <p>Soy panadero y tabajo de medio tiempo.</p>
+
+            </div>
+         
+    
         `;
     }
     connectedCallback(){
