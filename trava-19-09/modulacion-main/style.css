@@ -1,0 +1,167 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f5;
+    color: #4b4848;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    background-color: #ddd; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 8px 16px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Botón Actualizar */
+#actualizar {
+    background-color: #2a288b;
+    color: rgb(1, 1, 1);
+    border: 1px solid #757575; 
+    margin-right: 20px;
+}
+
+/* Botón Eliminar */
+#eliminar {
+    background-color: #a07628; 
+    color: rgb(0, 0, 0);
+    border: 1px solid #712dca; 
+    margin-left: 20px;
+}
+
+/* Checkbox para completar la tarea */
+input[type="checkbox"] {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Estilos para la tarjeta de la tarea */
+.tarjeta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+#root {
+    max-width: 800px;
+    margin: 100px 0 0 24.5%;
+    padding: 20px;
+    text-align: center;
+}
+
+#contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#tarea {
+    margin-left: 50px;
+}
+
+#botones {
+    display: flex;
+    margin: 0 10px 0 10px;
+}
+
+#enviar {
+    margin-right: 30px;
+}
+
+#tareas {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    border: none;
+}
+
+#chek {
+    display: flex;
+    border: none;
+    flex-direction: row;
+    box-shadow: none;
+    padding: 0%;
+}
+
+#bot {
+    padding: 10px ;
+    border: none;
+    box-shadow: none;
+}
+
+/* Media Queries para hacerlo responsive */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 800px) {
+    #root {
+        max-width: 80%;
+        padding: 20px;
+        margin: 20px 0 0 20px;
+    }
+    
+    .tarjeta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #tarea {
+        margin-left: 0;
+        font-size: 1em;
+    }
+
+    #contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    #botones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #chek {
+        display: flex;
+        border: none;
+        flex-direction: row;
+        align-items: center;
+        box-shadow: none;
+        padding: 0%;
+    }
+    
+/* Botón Actualizar */
+#actualizar {
+    background-color: #4CAF50;
+    color: rgb(1, 1, 1);
+    border: 1px solid #757575; 
+    margin-right: 0px;
+}
+
+/* Botón Eliminar */
+#eliminar {
+    background-color: #FF5252; 
+    color: rgb(0, 0, 0);
+    border: 1px solid #757575; 
+    margin-left: 0px;
+} 
+
+
+}
